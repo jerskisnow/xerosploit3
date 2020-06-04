@@ -1,11 +1,24 @@
 
 [![Version](https://img.shields.io/badge/Xerosploit-Version_1.0-brightgreen.svg?maxAge=259200)]()
-[![PyPI](https://img.shields.io/badge/Python-2.7-blue.svg)]()
+[![PyPI](https://img.shields.io/badge/Python-3.6-blue.svg)]()
 [![Build](https://img.shields.io/badge/Supported_OS-linux-orange.svg)]()
 [![AUR](https://img.shields.io/aur/license/yaourt.svg)]()
 
+
+Xerosploit3
+=
+改动如下:
+修改raw_input为input, 从而兼容python3
+将绝对路径修改为相对路径, 从而免安装直接运行
+增加了requirements.txt, 方便快速安装支持库
+
+暂时还没发现其他bug, 欢迎反馈
+
+---
+
 Xerosploit
 =
+
 Xerosploit is a penetration testing toolkit whose goal is to perform man in the middle attacks for testing purposes. It brings various modules that allow to realise efficient attacks, and also allows to carry out denial of service attacks and port scanning.
 Powered by <a href="https://www.bettercap.org"> bettercap</a> and <a href="https://www.bettercap.org"> nmap</a>.
 
