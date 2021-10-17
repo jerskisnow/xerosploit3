@@ -10,11 +10,9 @@ Xerosploit3
 Changes:
 
 - Changed raw_input to input, so that it is compatible with python3
-- Changed absolute path to relative path, so that it can be run directly without installation
+- Changed absolute paths to relative paths
 - Added support for python3 in install.py
 - Added support for python3 in run.sh
-
-No other bugs found yet, feedback welcome
 
 ---
 
