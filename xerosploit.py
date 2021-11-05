@@ -67,9 +67,9 @@ def main():
 
 
 # Show a random banner. Configured in banner.py .  
-			print (xe_header())
+			print(xe_header())
 
-			print ("""
+			print("""
 [+]═══════════[ Author : @LionSec1 \033[1;36m_-\|/-_\033[1;m Website: www.neodrix.com ]═══════════[+]
 
                       [ Powered by Bettercap and Nmap ]""")
@@ -86,8 +86,8 @@ def main():
 			table = [["IP Address","MAC Address","Gateway","Iface","Hostname"],
 					 ["","","","",""],
 					 [n_ip,n_mac.upper(),gateway,up_interface,n_host]]
-			print (tabulate(table, stralign="center",tablefmt="fancy_grid",headers="firstrow"))
-			print ("")
+			print(tabulate(table, stralign="center",tablefmt="fancy_grid",headers="firstrow"))
+			print("")
 
 
 
@@ -217,8 +217,8 @@ def main():
 
 								else:
 									# if all ports are closed , show error message . 
-									print (check_open_port)
-									print ("\033[1;91m[!] All 1000 scanned ports on " + target_name + " are closed\033[1;m")
+									print(check_open_port)
+									print("\033[1;91m[!] All 1000 scanned ports on " + target_name + " are closed\033[1;m")
 									pscan()
 							else:
 								print("\033[1;91m\n[!] Error : Command not found.\033[1;m")
@@ -791,7 +791,7 @@ def main():
 						home()
 					# Show disponible modules.
 					elif options == "help":
-						print ("")
+						print("")
 						table_datas = [
 		    				["\033[1;36m\n\n\n\n\n\n\n\n\n\n\n\n\n\nMODULES\n", """
 pscan       :  Port Scanner
@@ -898,7 +898,7 @@ deface      :  Overwrite all web pages with your HTML code\n\033[1;m"""]
 
 				elif cmd_0 == "iface": # Change network interface.
 					def iface():
-						print ("")
+						print("")
 						table_datas = [
 			    			["\033[1;36m\nInformation\n", "\nManually set your network interface.\nInsert '0' if you want to choose your default network interface.\n\033[1;m"]
 						]
@@ -952,7 +952,7 @@ deface      :  Overwrite all web pages with your HTML code\n\033[1;m"""]
 					rm_log()	
 # Principal commands
 				elif cmd_0 == "help":
-					print ("")
+					print("")
 					table_datas = [
 			    		["\033[1;36m\n\n\n\nCOMMANDS\n", """
 scan     :  Map your network.
@@ -982,7 +982,7 @@ exit     :  Close Xerosploit.\n\033[1;m"""]
 
 
 	except KeyboardInterrupt:
-		print ("\n" + exit_msg)
+		print("\n" + exit_msg)
 		sleep(1)
 	except Exception:
 		traceback.print_exc(file=sys.stdout)
